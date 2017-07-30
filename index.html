@@ -1,0 +1,131 @@
+<html>
+<head>
+
+<style>
+    body {
+        margin : 0px;
+        border: 0px;
+        overflow: hidden;
+    }
+    section {
+        height: 700px;
+        width: 100%;
+    }
+.header {
+    height: 70px;
+    width: 100%;
+    background: #2c3e50;
+    position: fixed;
+}
+.heading {
+    padding-top: 4px;
+    font-size: 24px;
+}
+.sidebar {
+    width:250px;
+    height: 100%;
+    background: #000;
+    float: left;
+    margin-top: 70px;
+    position: fixed;
+}
+#messaging {
+    /* background-color: #fff; */
+}
+
+.content {
+    background: #F0F0F0;
+    height: 100%;
+}
+ul li a:hover {
+    background: #F0F0F0;
+    color: #000;
+    padding-left: 30px;
+
+}
+ul li {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 8px;
+}
+ul#sidebar {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul li  a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid  #7f8c8d; 
+    padding: 12px;
+    font-size: 16px;
+    transition: 1s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+     
+} 
+   .container {
+       height: 300px;
+       width: 400px; 
+       margin: 0 auto;
+       text-align: center;
+   }
+   .message {
+       font-size: 30px;
+       margin-top: 60px;
+   }
+   #groups  p  {
+       margin-top: 120px;
+       font-size: 30px;
+       color: red;
+       
+   }
+</style>
+</head>
+<body>
+
+<div id="container">
+   <div class="header">
+       <center><h2 class="heading"style= "color: white">Meetup Portal Admin Panel</h2></center>
+   </div>
+   <div class="sidebar">
+       <ul id="sidebar"S>
+           <li class="active"><a href="#">Login</a> </li>
+           <li><a href="#messaging">Messaging</a></li>
+           <li><a href="#">Database</a></li>
+           <li><a href="#groups">Groups</a></li>
+           <li><a href="#">Events</a></li>
+       </ul>
+   </div>
+     <div class="content">
+         <section>
+         <br>
+         <center><h1>Groups URL</h1> </center>
+     <div class="container">
+         <form>
+            <div class="form-input"> <input type="text" placeholder= "enter your email"></div>
+            <div class="form-input"> <input type="password" placeholder ="enter your password"></div>
+         </form>
+      </div>
+            </section>
+            <section id="messaging">
+                <div class="container"><br>
+                   <p class="message">Messages</p>
+                    </div>
+            </section>
+            <section>
+             </section>
+            <section id="groups">
+                <div class="container">
+                    <p>Groups</p>
+                    </div>
+         </section>
+   </div>
+
+
+   
+</div>
+</body>
+
+</html>
